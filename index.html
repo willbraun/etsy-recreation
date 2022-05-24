@@ -6,15 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etsy Recreation</title>
     <link rel="stylesheet" href="styles/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <div class="container">
-        <input type="text" placeholder="Search - disabled for now" disabled>
+    <div class="page-container">
+        <header>
+            <input type="text" placeholder="plants" disabled>
+        </header>
+
+        <main>
+            <section class="results-list">
+
+            </section>
+        </main>
+        
+        
 
 
     </div>
 
+            <!-- <img src="{{Images[url_570xN]}}" alt="{{title}}"> -->
+
+    <script id="result-template" type="text/x-handlebars-template">
+        <article class="result">
+
+            <p>{{title}}</p>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <p>{{price}} {{currency_code}}</p>
+        </article>
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/data.js"></script>
     <script src="js/main.js"></script>
 </body>
