@@ -14,6 +14,14 @@
         <header class="row m-0">
             <input class="col-6 m-auto" type="text" placeholder="plants" disabled>
         </header>
+
+        <select class="form-select sort-by" aria-label="Default select example">
+            <option selected>Sort by...</option>
+            <option value="1">Lowest Price</option>
+            <option value="2">Highest Price</option>
+            <option value="3">Newest</option>
+        </select>
+
         <section class="row gx-4 results-list"></section>
     </div>
 
@@ -24,13 +32,6 @@
                 <img src="{{Images.0.url_570xN}}" alt="{{title}}">
             </div>
             <p class="title">{{title}}</p>
-            <div class="rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-            </div>
             <p class="price">{{price}} {{currency_code}}</p>
         </article>
         {{/each}}
