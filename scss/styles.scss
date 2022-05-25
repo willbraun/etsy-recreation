@@ -3,31 +3,37 @@
 }
 
 main {
-    max-width: 1300px;
     margin: auto;
     border: 1px solid red;
 }
 
 .results-list {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .result {
+    height: 400px;
     max-width: 300px;
-    border: 1px solid #000;
-    margin-bottom: 33px;
+}
 
-    img {
-        width: 100%;
-    }
+.imgbox {
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .title, .price {
     color: #1f1f1f;
     font-family: Helvetica, sans-serif;
+}
+
+.title {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .price {
