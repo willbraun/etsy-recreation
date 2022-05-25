@@ -1,4 +1,4 @@
-import { data as data } from data.js;
+import { data } from '/js/data.js';
 
 const source = document.querySelector('#result-template').innerHTML;
 const template = Handlebars.compile(source);
@@ -88,4 +88,5 @@ const singleResult =
           };
  
 const $resultsArea = document.querySelector('.results-list');
+
 $resultsArea.innerHTML = template(data);

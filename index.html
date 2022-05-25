@@ -21,14 +21,12 @@
             </section>
         </main>
         
-        
-
-
     </div>
 
             
 
     <script id="result-template" type="text/x-handlebars-template">
+        {{#each results}}
         <article class="result">
             <img src="{{Images.0.url_570xN}}" alt="{{title}}">
             <p class="title">{{title}}</p>
@@ -41,10 +39,10 @@
             </div>
             <p class="price">{{price}} {{currency_code}}</p>
         </article>
+        {{/each}}
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="js/data.js"></script>
-    <script src="js/main.js"></script>
+    <script src="./js/main.js" type="module"></script>
 </body>
 </html>
