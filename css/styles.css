@@ -10,11 +10,15 @@ main {
 
 .results-list {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .result {
   max-width: 300px;
   border: 1px solid #000;
+  margin-bottom: 33px;
 }
 .result img {
   width: 100%;
