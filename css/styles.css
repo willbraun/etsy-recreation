@@ -1,5 +1,32 @@
-p {
-  background-color: red;
+* {
+  box-sizing: border-box;
+}
+
+main {
+  max-width: 1300px;
+  margin: auto;
+  border: 1px solid red;
+}
+
+.results-list {
+  width: 100%;
+}
+
+.result {
+  max-width: 300px;
+  border: 1px solid #000;
+}
+.result img {
+  width: 100%;
+}
+
+.title, .price {
+  color: #1f1f1f;
+  font-family: Helvetica, sans-serif;
+}
+
+.price {
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=styles.css.map */
