@@ -1,4 +1,4 @@
-import { data } from '/js/data.js';
+import { data } from './data.js';
 
 const source = document.querySelector('#result-template').innerHTML;
 const template = Handlebars.compile(source);
