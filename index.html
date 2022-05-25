@@ -10,24 +10,16 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <input type="text" placeholder="plants" disabled>
+    <div class="container-fluid p-0">
+        <header class="row m-0">
+            <input class="col-6 m-auto" type="text" placeholder="plants" disabled>
         </header>
-
-        <main>
-            <section class="row results-list">
-
-            </section>
-        </main>
-        
+        <section class="row gx-4 results-list"></section>
     </div>
-
-            
 
     <script id="result-template" type="text/x-handlebars-template">
         {{#each results}}
-        <article class="col-3 result">
+        <article class="col-xl-3 col-lg-4 col-md-6 mx-sm-0 result">
             <div class="imgbox">
                 <img src="{{Images.0.url_570xN}}" alt="{{title}}">
             </div>

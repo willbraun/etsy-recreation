@@ -2,18 +2,32 @@
     box-sizing: border-box;
 }
 
-main {
-    margin: auto;
-    border: 1px solid red;
+header {
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+
+    input {
+        height: 50px;
+        border-radius: 25px;
+        border: 2px solid #000;
+    }
 }
 
 .results-list {
-    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
 }
 
 .result {
     height: 400px;
-    max-width: 300px;
+    max-width: 400px;
 }
 
 .imgbox {
